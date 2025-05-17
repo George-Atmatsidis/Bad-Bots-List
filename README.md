@@ -1,2 +1,0 @@
-# SecureMySSH
-on development
