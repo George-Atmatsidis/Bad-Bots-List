@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (AhrefsBot|SemrushBot|MJ12bot|dotbot|BLEXBot|ZoominfoBot|MegaIndex|GPTBot|ClaudeBot) [NC]
+RewriteRule ^ - [F,L]
+
+
+#Testing: After implementing:
+
+# Verify with
+# curl -A "BadBot" http://yoursite.com           (should return 403)
